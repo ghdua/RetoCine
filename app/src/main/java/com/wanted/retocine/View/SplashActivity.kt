@@ -24,7 +24,7 @@ class SplashActivity : AppCompatActivity() {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
-        }, 3000) // 3000 is the delayed time in milliseconds.TODO("Not yet implemented")
+        }, 1000) // 3000 is the delayed time in milliseconds.TODO("Not yet implemented")
     }
 
     private fun CheckInternetConnection() {
