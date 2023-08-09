@@ -1,7 +1,8 @@
-package com.wanted.retocine.View
+package com.wanted.retocine.UI.View
 
 import android.app.ProgressDialog
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -18,12 +19,35 @@ class SplashActivity : AppCompatActivity() {
         CheckInternetConnection()
     }
 
+    private fun VerifyLoginData() {
+        val loginDataSP: SharedPreferences =  getSharedPreferences("LOGIN_DATA_SP",MODE_PRIVATE)
+        if(loginDataSP!=null)
+        {
+            var caca: String = loginDataSP.getString("userName","").toString()
+            if(!caca.isEmpty())
+                GoMain()
+            else
+                GoLogin()
+        }
+    }
+
+    private fun GoLogin() {
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
+
+    private fun GoMain() {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
+
     private fun Splash() {
         // Handler().postDelayed({
-        Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-            finish()
+        Handler(Looper.getMainLooper()).postDelayed(
+            {
+                VerifyLoginData()
         }, 1000) // 3000 is the delayed time in milliseconds.TODO("Not yet implemented")
     }
 

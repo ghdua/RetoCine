@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.View.MovieDetailActivity">
+
+    <ImageView
+        android:id="@+id/IVPhotoMovieDetail"
+        android:layout_width="220dp"
+        android:layout_height="300dp"
+        android:src="@drawable/cinemasplash"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/TVNameMovieDetail"/>
+
+    <TextView
+        android:id="@+id/TVNameMovieDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IVPhotoMovieDetail"
+        app:layout_constraintBottom_toTopOf="@+id/TVDirectorMovieDetail"/>
+
+    <TextView
+        android:id="@+id/TVDirectorMovieDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DIRECTOR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVNameMovieDetail"
+        app:layout_constraintBottom_toTopOf="@id/TVVoteAverageMovieDetail"/>
+
+    <TextView
+        android:id="@+id/TVVoteAverageMovieDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVDirectorMovieDetail"
+        app:layout_constraintBottom_toTopOf="@id/TVReleaseDateMovieDetail"/>
+
+    <TextView
+        android:id="@+id/TVReleaseDateMovieDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DATE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVVoteAverageMovieDetail"
+        app:layout_constraintBottom_toTopOf="@id/TVOverviewMovieDetail"/>
+
+    <TextView
+        android:id="@+id/TVOverviewMovieDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OVERVIEW"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVReleaseDateMovieDetail"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

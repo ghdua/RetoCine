@@ -11,7 +11,7 @@ import javax.net.ssl.TrustManager
 import javax.net.ssl.X509TrustManager
 
 object RetrofitHelper {
-    const val BaseURL: String = ""
+    const val BaseURL: String = "http://demo8989983.mockable.io/"
 
     fun GetRetrofit(): Retrofit
     {
