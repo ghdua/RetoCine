@@ -41,16 +41,18 @@
                 android:textStyle="bold"
                 android:textSize="16dp"
                 android:text="PELÍCULA"
+                android:textColor="@color/black"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/IVMoviePhoto"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toTopOf="@+id/TVMovieDirector"/>
+                app:layout_constraintBottom_toTopOf="@+id/TVMovieReleaseDate"/>
 
             <TextView
-                android:id="@+id/TVMovieDirector"
+                android:id="@+id/TVMovieReleaseDate"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="20dp"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="16dp"
                 android:text="ROBERT ZEMECKIS"
@@ -71,7 +73,7 @@
                 android:text="Ver detalles"
                 android:textAlignment="textEnd"
                 app:layout_constraintStart_toEndOf="@+id/IVMoviePhoto"
-                app:layout_constraintTop_toBottomOf="@+id/TVMovieDirector"
+                app:layout_constraintTop_toBottomOf="@+id/TVMovieReleaseDate"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
         </androidx.constraintlayout.widget.ConstraintLayout>

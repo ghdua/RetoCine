@@ -8,8 +8,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.Observer
-import com.wanted.retocine.LiveData.InternetConnection
-import com.wanted.retocine.LiveData.VerifyInternetConnection
+import com.wanted.retocine.Data.LiveData.InternetConnection
+import com.wanted.retocine.Data.LiveData.VerifyInternetConnection
 import com.wanted.retocine.R
 import com.wanted.retocine.databinding.ActivityLoginBinding
 import kotlin.math.log
@@ -18,7 +18,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var loginActivityBinding: ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_login)
         loginActivityBinding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(loginActivityBinding.root)
         supportActionBar!!.hide()
@@ -59,10 +58,8 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         if(password.isEmpty())
             loginActivityBinding.ETLoginPassword.setError("Ingrese paassword")
         if(!user.isEmpty() &&
-            !password.isEmpty())
-        {
-            if(user.contains("Admin") && password.contains("Password*123"))
-            {
+            !password.isEmpty()) {
+            if(user.contains("Admin") && password.contains("Password*123")) {
                 SaveLoginData(user)
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)

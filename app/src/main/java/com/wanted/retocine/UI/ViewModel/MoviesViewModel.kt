@@ -4,7 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.wanted.retocine.Domain.GetMoviesDataUseCase
-import com.wanted.retocine.Model.MovieModelResponse
+import com.wanted.retocine.Data.Model.MovieModelResponse
 import kotlinx.coroutines.launch
 
 class MoviesViewModel: ViewModel() {

@@ -3,7 +3,7 @@ package com.wanted.retocine.UI.Adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.wanted.retocine.Model.MovieModel
+import com.wanted.retocine.Data.Model.MovieModel
 import com.wanted.retocine.R
 
 class MoviesAdapter(private val movies: List<MovieModel>):

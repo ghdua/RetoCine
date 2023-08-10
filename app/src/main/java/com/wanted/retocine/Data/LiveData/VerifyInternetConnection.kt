@@ -1,4 +1,4 @@
-package com.wanted.retocine.LiveData
+package com.wanted.retocine.Data.LiveData
 
 import android.app.ProgressDialog
 import android.content.Context

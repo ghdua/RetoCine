@@ -1,7 +1,7 @@
 package com.wanted.retocine.Domain
 
-import com.wanted.retocine.Model.MovieModelResponse
-import com.wanted.retocine.Repository.MoviesRepository
+import com.wanted.retocine.Data.Model.MovieModelResponse
+import com.wanted.retocine.Data.Repository.MoviesRepository
 
 class GetMoviesDataUseCase {
     private val Repository = MoviesRepository()

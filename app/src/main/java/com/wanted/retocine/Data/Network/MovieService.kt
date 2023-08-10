@@ -1,7 +1,7 @@
-package com.wanted.retocine.Network
+package com.wanted.retocine.Data.Network
 
 import com.wanted.retocine.Core.RetrofitHelper
-import com.wanted.retocine.Model.MovieModelResponse
+import com.wanted.retocine.Data.Model.MovieModelResponse
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import retrofit2.Response

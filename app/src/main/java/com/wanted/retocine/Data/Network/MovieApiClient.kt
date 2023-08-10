@@ -1,6 +1,6 @@
-package com.wanted.retocine.Network
+package com.wanted.retocine.Data.Network
 
-import com.wanted.retocine.Model.MovieModelResponse
+import com.wanted.retocine.Data.Model.MovieModelResponse
 import retrofit2.Response
 import retrofit2.http.GET
 

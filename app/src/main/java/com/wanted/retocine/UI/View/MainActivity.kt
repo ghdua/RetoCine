@@ -11,32 +11,39 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.wanted.retocine.LiveData.InternetConnection
-import com.wanted.retocine.Model.MovieDataProvider
-import com.wanted.retocine.Model.MovieModel
+import androidx.room.Room
+import com.wanted.retocine.Data.DataBase.Entities.MovieEntity
+import com.wanted.retocine.Data.DataBase.MovieDataBase
+import com.wanted.retocine.Data.LiveData.InternetConnection
+import com.wanted.retocine.Data.Model.MovieDataProvider
+import com.wanted.retocine.Data.Model.MovieModel
 import com.wanted.retocine.R
 import com.wanted.retocine.UI.Adapter.MoviesAdapter
 import com.wanted.retocine.UI.ViewModel.MoviesViewModel
 import com.wanted.retocine.databinding.ActivityMainBinding
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var mainActivityBinding: ActivityMainBinding
     private val moviesViewModel: MoviesViewModel by viewModels()
 
+    lateinit var dbs: MovieDataBase
+    lateinit var movieEntityList: MutableList<MovieEntity>
+
     private var moviesList: List<MovieModel> = listOf()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_home)
         mainActivityBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainActivityBinding.root)
         supportActionBar!!.hide()
         mainActivityBinding.IVLogout.setOnClickListener(this)
         LoadMoviesList()
+        movieEntityList = mutableListOf()
         CheckInternetConnection()
     }
-
     private fun LoadMoviesList() {
         moviesViewModel.onCreate()
         moviesViewModel.MoviesModel.observe(this, Observer {
@@ -46,7 +53,20 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             for(i in 0..moviesmodel.size)
                 MovieDataProvider.MoviesListResult.add(it)
             moviesList = moviesmodel
+            for(i in 0..moviesList.size-1)
+            {
+                var movieName = moviesList.get(i).MovieModelName
+                var movieDirector = moviesList.get(i).MovieModelDirector
+                var movieCountry = moviesList.get(i).MovieModelCountry
+                var movieSynopsis = moviesList.get(i).MovieModelSynopsis
+                var movieReleaseDate = moviesList.get(i).MovieModelReleaseDate
+                var movieVoteAverage = moviesList.get(i).MovieModelVoteAverage
+                var moviePhoto = moviesList.get(i).MovieModelPhoto
+                var ent:MovieEntity = MovieEntity(0,movieName,movieReleaseDate,movieVoteAverage,movieSynopsis,movieCountry,movieDirector,moviePhoto)
+                movieEntityList.add(ent)
+            }
             mainActivityBinding.RVMovies.adapter = MoviesAdapter(moviesmodel)
+            var moviesEntities: MutableList<MovieEntity> = mutableListOf()
         })
         moviesViewModel.IsLoading.observe(this, Observer {
             mainActivityBinding.PBSearchingData.isVisible = it
@@ -80,6 +100,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(p0: View?) {
         val builder = AlertDialog.Builder(this)
+        builder.setCancelable(false)
         builder.setTitle("CinemApp")
         builder.setMessage("¿Está seguro que desea cerrar sesión?")
         builder.setPositiveButton("Aceptar") { dialog, which ->

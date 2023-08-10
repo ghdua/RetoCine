@@ -7,24 +7,26 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.view.animation.AnimationUtils
 import androidx.lifecycle.Observer
-import com.wanted.retocine.LiveData.InternetConnection
+import com.wanted.retocine.Data.LiveData.InternetConnection
 import com.wanted.retocine.R
+import com.wanted.retocine.databinding.ActivitySplashBinding
 
 class SplashActivity : AppCompatActivity() {
+    private lateinit var splashActivityBinding: ActivitySplashBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
+        splashActivityBinding = ActivitySplashBinding.inflate(layoutInflater)
+        setContentView(splashActivityBinding.root)
         supportActionBar!!.hide()
         CheckInternetConnection()
     }
-
     private fun VerifyLoginData() {
         val loginDataSP: SharedPreferences =  getSharedPreferences("LOGIN_DATA_SP",MODE_PRIVATE)
-        if(loginDataSP!=null)
-        {
-            var caca: String = loginDataSP.getString("userName","").toString()
-            if(!caca.isEmpty())
+        if(loginDataSP!=null) {
+            var user: String = loginDataSP.getString("userName","").toString()
+            if(!user.isEmpty())
                 GoMain()
             else
                 GoLogin()
@@ -44,11 +46,12 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun Splash() {
-        // Handler().postDelayed({
         Handler(Looper.getMainLooper()).postDelayed(
             {
+                    val an = AnimationUtils.loadAnimation(this, R.anim.animation)
+                    splashActivityBinding.IVLogoSplash.animation = an
                 VerifyLoginData()
-        }, 1000) // 3000 is the delayed time in milliseconds.TODO("Not yet implemented")
+        }, 500) // 3000 is the delayed time in milliseconds.TODO("Not yet implemented")
     }
 
     private fun CheckInternetConnection() {

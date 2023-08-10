@@ -1,4 +1,4 @@
-package com.wanted.retocine.LiveData
+package com.wanted.retocine.Data.LiveData
 
 import android.annotation.TargetApi
 import android.content.BroadcastReceiver

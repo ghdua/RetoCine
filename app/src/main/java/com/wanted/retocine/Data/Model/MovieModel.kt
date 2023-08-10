@@ -1,4 +1,4 @@
-package com.wanted.retocine.Model
+package com.wanted.retocine.Data.Model
 
 import com.google.gson.annotations.SerializedName
 
