@@ -9,7 +9,6 @@ import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import com.wanted.retocine.Data.LiveData.InternetConnection
-import com.wanted.retocine.Data.LiveData.VerifyInternetConnection
 import com.wanted.retocine.R
 import com.wanted.retocine.databinding.ActivityLoginBinding
 import kotlin.math.log
