@@ -1,0 +1,3 @@
+com.wanted.retocine.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

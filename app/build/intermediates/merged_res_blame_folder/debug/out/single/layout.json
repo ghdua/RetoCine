@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.wanted.retocine.app-mergeDebugResources-41:/layout/activity_movie_detail.xml",
+        "source": "com.wanted.retocine.app-main-44:/layout/activity_movie_detail.xml"
+    },
+    {
+        "merged": "com.wanted.retocine.app-mergeDebugResources-41:/layout/activity_login.xml",
+        "source": "com.wanted.retocine.app-main-44:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.wanted.retocine.app-mergeDebugResources-41:/layout/activity_splash.xml",
+        "source": "com.wanted.retocine.app-main-44:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.wanted.retocine.app-mergeDebugResources-41:/layout/layout_item_movies.xml",
+        "source": "com.wanted.retocine.app-main-44:/layout/layout_item_movies.xml"
+    },
+    {
+        "merged": "com.wanted.retocine.app-mergeDebugResources-41:/layout/activity_main.xml",
+        "source": "com.wanted.retocine.app-main-44:/layout/activity_main.xml"
+    }
+]

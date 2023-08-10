@@ -1,0 +1,130 @@
+[
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/drawable_cinemasplash.png.flat",
+        "source": "com.wanted.retocine.app-main-44:/drawable/cinemasplash.png"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/layout_layout_item_movies.xml.flat",
+        "source": "com.wanted.retocine.app-main-44:/layout/layout_item_movies.xml"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.wanted.retocine.app-main-44:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/xml_data_extraction_rules.xml.flat",
+        "source": "com.wanted.retocine.app-main-44:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/layout_activity_movie_detail.xml.flat",
+        "source": "com.wanted.retocine.app-main-44:/layout/activity_movie_detail.xml"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.wanted.retocine.app-main-44:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.wanted.retocine.app-main-44:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.wanted.retocine.app-main-44:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.wanted.retocine.app-main-44:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.wanted.retocine.app-main-44:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/drawable_cartelerafondo.jpg.flat",
+        "source": "com.wanted.retocine.app-main-44:/drawable/cartelerafondo.jpg"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/layout_activity_login.xml.flat",
+        "source": "com.wanted.retocine.app-main-44:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.wanted.retocine.app-main-44:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/drawable_baseline_lock_24.xml.flat",
+        "source": "com.wanted.retocine.app-main-44:/drawable/baseline_lock_24.xml"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/drawable_fondomovies.jpg.flat",
+        "source": "com.wanted.retocine.app-main-44:/drawable/fondomovies.jpg"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/drawable_moviesfondo.jpg.flat",
+        "source": "com.wanted.retocine.app-main-44:/drawable/moviesfondo.jpg"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.wanted.retocine.app-main-44:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.wanted.retocine.app-main-44:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/drawable_logout.png.flat",
+        "source": "com.wanted.retocine.app-main-44:/drawable/logout.png"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.wanted.retocine.app-main-44:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.wanted.retocine.app-main-44:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/drawable_baseline_person_24.xml.flat",
+        "source": "com.wanted.retocine.app-main-44:/drawable/baseline_person_24.xml"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/layout_activity_splash.xml.flat",
+        "source": "com.wanted.retocine.app-main-44:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/layout_activity_main.xml.flat",
+        "source": "com.wanted.retocine.app-main-44:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.wanted.retocine.app-main-44:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/drawable_cinemalogo.png.flat",
+        "source": "com.wanted.retocine.app-main-44:/drawable/cinemalogo.png"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.wanted.retocine.app-main-44:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/xml_backup_rules.xml.flat",
+        "source": "com.wanted.retocine.app-main-44:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/drawable_cinemasplashtransparent.png.flat",
+        "source": "com.wanted.retocine.app-main-44:/drawable/cinemasplashtransparent.png"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.wanted.retocine.app-main-44:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/drawable_disconnectednetwork.png.flat",
+        "source": "com.wanted.retocine.app-main-44:/drawable/disconnectednetwork.png"
+    },
+    {
+        "merged": "com.wanted.retocine.app-merged_res-42:/anim_animation.xml.flat",
+        "source": "com.wanted.retocine.app-main-44:/anim/animation.xml"
+    }
+]
